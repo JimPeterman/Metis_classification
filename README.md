@@ -24,7 +24,7 @@ A function was created to compare models by outputting numeric and visual summar
 Considering the primary concern was correctly classifying individuals with low absolute fitness, the primary metric of interest was recall. Nonetheless, other metrics were also used when selecting the best performing model.
 
 
-# The Final Product/Results:
+## The Final Product/Results:
 The final model chosen was a logistic model involving over-sampling and a lowered decision threshold. The features included in this model were: age, sex, height, weight, physical activity status, hypertension status, diabetes status, COPD status, cardiovascular disease status, asthma status, and beta blocker medication status. 
 
 The confusion matrix for this model indicates that low absolute fitness level can be identified using commonly collected health metrics:

@@ -16,8 +16,9 @@ The data for this analysis comes from the Fitness Registry and Importance of Exe
 The target was classification of a low absolute fitness level, defined as a peak oxygen consumption (VO<sub>2peak</sub>) <20ml/kg/min (approximately what is required to do 1.5 stages of the “Bruce” protocol, a common exercise testing protocol). Those classified as having a low absolute fitness level would then perform a “Balke” protocol (an “easier” protocol), while all others would perform the “Bruce” protocol.
 
 Data were split into 60% training, 20% validation, and 20% testing. A variety of classification models were then created, including kNN, logistic, decision tree, extra trees, random forest, naïve Bayes, and XG Boost. Due to imbalanced groups (~10% of individuals were classified as having “low” fitness), I also explored different sampling methods (oversampling, SMOTE procedure, under-sampling), different decision thresholds, and different class weights.
+
 A function was created to compare models by outputting numeric and visual summaries of model performance:
-![model_performance_function](images/ model_performance_function.png)
+![model_performance_function](images/model_performance_function.png)
 
 Considering the primary concern was correctly classifying individuals with low absolute fitness, the primary metric of interest was recall. Nonetheless, other metrics were also used when selecting the best performing model.
 

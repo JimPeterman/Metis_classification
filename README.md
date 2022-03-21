@@ -17,7 +17,7 @@ The target was classification of a low absolute fitness level, defined as a peak
 
 Data were split into 60% training, 20% validation, and 20% testing. A variety of classification models were then created, including kNN, logistic, decision tree, extra trees, random forest, naïve Bayes, and XG Boost. Due to imbalanced groups (~10% of individuals were classified as having “low” fitness), I also explored different sampling methods (oversampling, SMOTE procedure, under-sampling), different decision thresholds, and different class weights.
 
-A function was created to compare models by outputting numeric and visual summaries of model performance:
+A function was created to compare models by outputting numeric and visual summaries of model performance. For example:
 
 ![model_performance_function](images/model_performance_function.png)
 

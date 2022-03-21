@@ -18,6 +18,7 @@ The target was classification of a low absolute fitness level, defined as a peak
 Data were split into 60% training, 20% validation, and 20% testing. A variety of classification models were then created, including kNN, logistic, decision tree, extra trees, random forest, naïve Bayes, and XG Boost. Due to imbalanced groups (~10% of individuals were classified as having “low” fitness), I also explored different sampling methods (oversampling, SMOTE procedure, under-sampling), different decision thresholds, and different class weights.
 
 A function was created to compare models by outputting numeric and visual summaries of model performance:
+
 ![model_performance_function](images/model_performance_function.png)
 
 Considering the primary concern was correctly classifying individuals with low absolute fitness, the primary metric of interest was recall. Nonetheless, other metrics were also used when selecting the best performing model.
@@ -27,6 +28,7 @@ Considering the primary concern was correctly classifying individuals with low a
 The final model chosen was a logistic model involving over-sampling and a lowered decision threshold. The features included in this model were: age, sex, height, weight, physical activity status, hypertension status, diabetes status, COPD status, cardiovascular disease status, asthma status, and beta blocker medication status. 
 
 The confusion matrix for this model indicates that low absolute fitness level can be identified using commonly collected health metrics:
+
 ![confusion_matrix](images/model_confusion.jpg)
 
-Thus, this model could be used to determine the appropriate fitness test for individuals and therefore assessments of fitness and ultimately improve patient care.
+Thus, this model could be used to determine the appropriate fitness test for individuals and therefore enhance assessments of fitness, ultimately improving patient care.
